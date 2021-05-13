@@ -1,15 +1,55 @@
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<router-view></router-view>
+
+   
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//Named SLOTS With Profile 
+
+
 
 export default {
+ 
+  data() {
+    return {
+      posts:[{
+        title:'Ajinkya',
+        desc:'First Son'
+      },
+      {
+        title:'Ram',
+        desc:'Second Son'
+
+      },
+      {
+        title:'Mahadeo Warkad',
+        desc:'Son of Punjaappa warkad'
+      }
+      ],
+      name:'Ajinkya'
+    }
+  },
+  methods:{
+      onTitleChange(event) {
+            let index = this.posts.findIndex(
+                (post) => post.id === event.id,
+            );
+            this.posts[index].title = event.title;
+        },
+          changeTitle() {
+            for(var a in this.posts ){
+               this.posts[a].title = 'change the title in parent';
+
+            }
+        },
+
+  },
   name: 'App',
   components: {
-    HelloWorld
+ 
+    
   }
 }
 </script>
