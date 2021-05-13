@@ -1,11 +1,9 @@
 <template>
     <div>
-        Post Page
+        Create Post Page
     </div>
 </template>
 
 <script>
-export default {
-    name: 'Posts',
-};
+export default {};
 </script>
