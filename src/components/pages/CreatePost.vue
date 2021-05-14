@@ -15,6 +15,9 @@
         </div>
         <div class="mt-3">
         <button type="submit" class="btn btn-primary">Create Post</button>
+        <hr/>
+         <router-link to="/" class="btn btn-primary">Home</router-link>
+
 
         </div>
 

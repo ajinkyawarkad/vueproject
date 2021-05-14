@@ -20,7 +20,9 @@
         </div>
         
         <div class="mt-3">
-        <button type="submit" class="btn btn-primary">Create Transaction</button>
+        <button type="submit" class="btn btn-primary">Create Transaction</button> <hr/>
+         <router-link to="/" class="btn btn-primary">Home</router-link>
+
 
         </div>
 
