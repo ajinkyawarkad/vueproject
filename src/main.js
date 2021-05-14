@@ -3,6 +3,7 @@ import App from './App.vue';
 import Home from './components/pages/Home.vue';
 import Posts from './components/pages/Posts.vue';
 import CreatePost from './components/pages/CreatePost.vue';
+import PostDetails from './components/pages/PostDetails.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -13,6 +14,10 @@ const routes = [
     {
         path: '/posts',
         component: Posts,
+    },
+    {
+        path:'/posts/:id',
+        component: PostDetails,
     },
     {
         path: '/createpost',

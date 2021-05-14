@@ -15,13 +15,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/" class="nav-link">Home</a>
+                    <router-link to="/" class="nav-link">Home</router-link>
+                    
                 </li>
                 <li class="nav-item">
-                    <a href="/posts" class="nav-link">Posts</a>
+                    <router-link to="/posts" class="nav-link">Posts</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="/createpost" class="nav-link">Create Post</a>
+                    <router-link to="/createpost" class="nav-link">Create Posts</router-link>
+                </li>
+                  <li class="nav-item">
+                    <router-link to="/createpost" class="nav-link">Transaction</router-link>
                 </li>
             </ul>
         </div>
@@ -31,3 +35,10 @@
 <script>
 export default {};
 </script>
+
+<style scoped>
+a.router-link-active{
+background: #bbbb;
+
+}
+</style>
