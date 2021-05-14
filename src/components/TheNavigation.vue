@@ -18,15 +18,20 @@
                     <router-link to="/" class="nav-link">Home</router-link>
                     
                 </li>
+                 <li class="nav-item">
+                    <router-link to="/transaction" class="nav-link">Add Transaction</router-link>
+                </li>
+                 <li class="nav-item">
+                    <router-link to="/transactiond" class="nav-link">Transaction Details</router-link>
+                </li>
+                 <li class="nav-item">
+                    <router-link to="/createpost" class="nav-link">Add Posts</router-link>
+                </li>
                 <li class="nav-item">
                     <router-link to="/posts" class="nav-link">Posts</router-link>
                 </li>
-                <li class="nav-item">
-                    <router-link to="/createpost" class="nav-link">Create Posts</router-link>
-                </li>
-                  <li class="nav-item">
-                    <router-link to="/createpost" class="nav-link">Transaction</router-link>
-                </li>
+               
+                 
             </ul>
         </div>
     </nav></template

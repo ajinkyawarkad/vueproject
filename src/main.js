@@ -4,6 +4,8 @@ import Home from './components/pages/Home.vue';
 import Posts from './components/pages/Posts.vue';
 import CreatePost from './components/pages/CreatePost.vue';
 import PostDetails from './components/pages/PostDetails.vue';
+import Transaction from './components/pages/Transaction.vue';
+import TransDetails from './components/pages/TransDetails.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -22,6 +24,14 @@ const routes = [
     {
         path: '/createpost',
         component: CreatePost,
+    },
+    {
+        path: '/transaction',
+        component: Transaction,
+    },
+    {
+        path: '/transactiond',
+        component: TransDetails,
     },
 ];
 
